@@ -12,8 +12,13 @@
 ## 2. Project Summary
 - Device Description
 
+  This innovative solution employs a QR Code Reader to scan and record the quantity and expiration date of each food item, all of which are uniquely identified with QR codes. The information is then elegantly displayed on an LCD screen, offering users a clear and real-time overview of their remaining food inventory. To enhance user experience and energy efficiency, an Ambient Light Sensor intelligently controls the LCD screen's brightness. Additionally, a 3-Channel Touch Interface, featuring buttons and sliders, allows users to navigate menus and customize settings with ease.
+  
+  Furthermore, when scanning a QR code, a buzzer will sound to indicate successful scanning. Additionally, when buttons are pressed or QR codes are scanned, a red LED will illuminate. During normal operation, a green LED will be lit, indicating that the device is functioning. In sleep mode, the green LED will be turned off to conserve energy.
+  
 - Inspiration
 
+  The idea of our project FRIDGIT born out of the necessity for organized living in shared spaces. In our communal living scenario, where the refrigerator tends to accumulate diverse food items over time, the system is designed to combat forgetfulness and prevent food wastage.
 
 - Device Functionality
 
