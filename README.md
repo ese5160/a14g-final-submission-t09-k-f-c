@@ -60,5 +60,44 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 - **SRS 01** - The Server Software (SS) and Device Software (DS) shall establish connectivity via Wi-Fi, enabling seamless data transmission and reception between them.
 
+- **SRS 02** - SS shall be operational on personal computers, while DS shall be operational on the designated hardware device.
+
+- **SRS 03-1**
+
+   \- DS shall feature a mode selection interface, presenting users with options including:
+
+  - (a) User Selection: This mode allows a user to select their profile from a list of users.
+  - (b) Food Log-In: In this mode, DS is ready to register new food items and update their quantities.
+  - (c) Food Log-Out: This mode enables DS to decrement the food quantities, reflecting items removed from the fridge.
+
+- **SRS 03-2**
+
+   \- The mode selection interface of DS should offer:
+
+  - (a) Expiration Alarm Setting: Users can configure the advance notice period for food expiration alerts.
+
+- **SRS 04** - DS shall incorporate a "database" to systematically store user, food, and settings information. This database will employ a specific data structure, such as linked lists, for other efficient data organization.
+
+- **SRS 05** - DS shall be tasked with calculating expiration dates and persistently displaying reminder banners. To ensure .'s exhibition effect, the DS should verify expiration status at a minimum frequency of once per second and synchronize these reminders with SS upon request.
+
+- **SRS 06** - DS shall maintain a dynamic dictionary to encode each food item within the fridge. Each food type shall be assigned a unique identifier within this dictionary, which is then stored in the DS database.
+
+- **SRS 07-1**
+
+   \- SS shall provide a user interface (UI) capable of:
+
+  - (a) Identifying and displaying the current user.
+  - (b) Showcasing comprehensive details of the food items registered in the DS database.
+
+- **SRS 07-2**
+
+   \- The UI of SS should facilitate:
+
+  - (a) The registration of new users and the de-registration of existing users.
+
+- **SRS 08** - SS should possess the capability to retrieve on-line recipes via an API, curate recommended recipes, and dispatch these to DS.
+
+- **SRS 09** - SS should ensure mobile device compatibility and accessibility.
+
 
 ## 4. Project Photos & Screenshots
