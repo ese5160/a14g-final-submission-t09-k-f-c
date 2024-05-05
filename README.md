@@ -68,7 +68,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 ### 2.8 Project Links
 
 - Project Links
-  - URL to your Node-RED
+  - URL to your Node-RED: We are running node-red on local service due to the forbidden in our Azure VM. The source code of node-red and additional python web service are in folder `node-red/`.
   - A12G code repository: https://github.com/ese5160/a12g-firmware-drivers-t09-k-f-c
   - final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/folder-5853D6FB-9421-4C9F-A2A8-B61DBEEFAA1B
 ## 3. Hardware & Software Requirements

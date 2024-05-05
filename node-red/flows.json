@@ -1,0 +1,548 @@
+[
+    {
+        "id": "386212b8464f060d",
+        "type": "tab",
+        "label": "Tester",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7c948a09b8a29fd8",
+        "type": "tab",
+        "label": "MQTT handler",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "06512ec30d9e9486",
+        "type": "mqtt-broker",
+        "name": "LocalMQTT-EMQX",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "61773dc677f9c1a3",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1b2b6369a241e3ec",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9ec7149cbe3353b5",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "61773dc677f9c1a3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b544819c531b9c99",
+        "type": "mqtt out",
+        "z": "386212b8464f060d",
+        "name": "",
+        "topic": "INVENT_IN",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "06512ec30d9e9486",
+        "x": 810,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "410246bb419ffc01",
+        "type": "ui_button",
+        "z": "386212b8464f060d",
+        "name": "",
+        "group": "9ec7149cbe3353b5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"message\": \"from node-red\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "b544819c531b9c99"
+            ]
+        ]
+    },
+    {
+        "id": "fe630915a794956a",
+        "type": "mqtt out",
+        "z": "386212b8464f060d",
+        "name": "",
+        "topic": "USER_LIST_CHANGE",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "06512ec30d9e9486",
+        "x": 1030,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4c291e0315d4da02",
+        "type": "ui_button",
+        "z": "386212b8464f060d",
+        "name": "",
+        "group": "9ec7149cbe3353b5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Send to Local",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "3, DEFAULT, CC, SKX",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "471af289bf049012",
+                "8a6eb2406393da99"
+            ]
+        ]
+    },
+    {
+        "id": "fe287116b1785edb",
+        "type": "mqtt in",
+        "z": "386212b8464f060d",
+        "name": "",
+        "topic": "USER_U",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "06512ec30d9e9486",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 420,
+        "wires": [
+            [
+                "6a4279d8adfd8292",
+                "4c291e0315d4da02"
+            ]
+        ]
+    },
+    {
+        "id": "6a4279d8adfd8292",
+        "type": "debug",
+        "z": "386212b8464f060d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "471af289bf049012",
+        "type": "debug",
+        "z": "386212b8464f060d",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "8a6eb2406393da99",
+        "type": "delay",
+        "z": "386212b8464f060d",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 420,
+        "wires": [
+            [
+                "fe630915a794956a"
+            ]
+        ]
+    },
+    {
+        "id": "08a2b5b3e4d35255",
+        "type": "mqtt in",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "topic": "INVENT_IN",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "06512ec30d9e9486",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "1f77a02b5b699f4a"
+            ]
+        ]
+    },
+    {
+        "id": "90090a1aedc4b3a0",
+        "type": "debug",
+        "z": "7c948a09b8a29fd8",
+        "name": "INVENT_IN receive",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8d48c51581a76f22",
+        "type": "http request",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5000/api/invent-in",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 660,
+        "y": 180,
+        "wires": [
+            [
+                "f6b8752362451c6c"
+            ]
+        ]
+    },
+    {
+        "id": "f6b8752362451c6c",
+        "type": "debug",
+        "z": "7c948a09b8a29fd8",
+        "name": "HTTP response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1f77a02b5b699f4a",
+        "type": "json",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "90090a1aedc4b3a0",
+                "8d48c51581a76f22"
+            ]
+        ]
+    },
+    {
+        "id": "e1c137a04f824ced",
+        "type": "mqtt in",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "topic": "INVENT_OU",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "06512ec30d9e9486",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "8e2445096a11ea81"
+            ]
+        ]
+    },
+    {
+        "id": "5608387da310ccb9",
+        "type": "mqtt in",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "topic": "USER_SELECT",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "06512ec30d9e9486",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "42c86e2ce4733b24"
+            ]
+        ]
+    },
+    {
+        "id": "900a42a1b410b9f6",
+        "type": "debug",
+        "z": "7c948a09b8a29fd8",
+        "name": "INVENT_OUT receive",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "42c86e2ce4733b24",
+        "type": "debug",
+        "z": "7c948a09b8a29fd8",
+        "name": "USER_SELECT receive",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8e2445096a11ea81",
+        "type": "json",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "900a42a1b410b9f6",
+                "8b979290e6405bf4"
+            ]
+        ]
+    },
+    {
+        "id": "8b979290e6405bf4",
+        "type": "http request",
+        "z": "7c948a09b8a29fd8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:5000/api/invent-out",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 660,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    }
+]
