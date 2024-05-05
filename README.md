@@ -14,9 +14,7 @@
 
 The core vision of our FRIDGIT software is to "simplify and streamline fridge management." The primary functionality of this system revolves around tracking food quantities, logging purchase dates, and issuing expiration reminders. Our system's software is bifurcated into two main components: the Server Software (SS) and the Device Software (DS). Both are equipped with intuitive user interfaces (UIs) designed for ease of use.
 
-This innovative solution employs a QR Code Reader to scan and record the quantity and expiration date of each food item, all of which are uniquely identified with QR codes. The information is then elegantly displayed on an LCD screen, offering users a clear and real-time overview of their remaining food inventory. To enhance user experience and energy efficiency, an Ambient Light Sensor intelligently controls the LCD screen's brightness. Additionally, a 3-Channel Touch Interface, featuring buttons and sliders, allows users to navigate menus and customize settings with ease.
-
-Furthermore, when scanning a QR code, a buzzer will sound to indicate successful scanning. Additionally, when buttons are pressed or QR codes are scanned, a red LED will illuminate. During normal operation, a green LED will be lit, indicating that the device is functioning. In sleep mode, the green LED will be turned off to conserve energy.
+This innovative solution employs a QR Code Reader to scan and record the quantity and expiration date of each food item, all of which are uniquely identified with QR codes. The information is then elegantly displayed on an LCD screen, offering users a clear and real-time overview of their remaining food inventory. To enhance user experience and energy efficiency, an Ambient Light Sensor intelligently controls the LCD screen's brightness. Additionally, we designed 2 buttons which allows users to navigate menus and customize settings with ease.
 
 The FRIDGIT system is designed for individuals who find it challenging to keep an accurate mental inventory of their refrigerator's contents. This issue becomes particularly pronounced in households where the fridge is consistently well-stocked, leading to items being forgotten and, regrettably, spoiling. Such neglect not only results in wastage but also poses potential health risks and can negatively affect the quality of other items stored nearby.
 
@@ -27,7 +25,7 @@ Additionally, our system's multi-user capability proves invaluable for those sha
 The idea of our project FRIDGIT born out of the necessity for organized living in shared spaces. In our communal living scenario, where the refrigerator tends to accumulate diverse food items over time, the system is designed to combat forgetfulness and prevent food wastage.
 
 ### 2.3 Device Functionality
-- Hardware: The device is centered around the SAMW25 microcontroller and integrates key hardware components including the ambient light sensor, a LCD, 3-channel touch sensor, and the QR Code reader.
+- Hardware: The device is centered around the SAMW25 microcontroller and integrates key hardware components including the ambient light sensor, and the QR Code reader and LCD.
 
 - Software: SS features a cloud-based UI, enabling users to remotely monitor their food inventory. In contrast, DS boasts a device-resident UI, which facilitates the addition and removal of food items from the system, thereby providing a local inventory checklist. These interfaces are tailored to empower users with seamless management of their fridge contents, whether they are adding new purchases or tracking existing items. Furthermore, the software architecture is crafted to accommodate multiple users, ensuring a collaborative and shared management experience. This is particularly beneficial for households or shared living spaces where fridge contents are communal.
 - Challenges
@@ -52,11 +50,11 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 - **HRS 03** - 1.8" diagonal LCD TFT display shall be used for user interface. LCD can display user and menu interface
 
-- **HRS 04** - button
+- **HRS 04** - Two different buttons shall be used to switch the menu and to comfirm the selected menu in LCD.
 
 - **HRS 05** - 5744 QR Code reader to I2C shall be used to scan and read QR codes on items in the refrigerator. Each item may be identified by a unique QR code, and the system can identify the item and update inventory information through a QR code reader. 
 
-- **HRS 06** - Buzzer shall beep when QR code reader scans to make inventory-in.
+- **HRS 06** - Buzzer shall beep when QR code reader scans to make inventory-in and inventory-out.
 
 ### 3.2 Software Requirements Specification (SRS)
 
@@ -64,7 +62,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 - **SRS 02** - SS shall be operational on personal computers, while DS shall be operational on the designated hardware device.
 
-- **SRS 03-1**
+- **SRS 03**
 
    \- DS shall feature a mode selection interface, presenting users with options including:
 
@@ -72,15 +70,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
   - (b) Food Log-In: In this mode, DS is ready to register new food items and update their quantities.
   - (c) Food Log-Out: This mode enables DS to decrement the food quantities, reflecting items removed from the fridge.
 
-- **SRS 03-2**
-
-   \- The mode selection interface of DS should offer:
-
-  - (a) Expiration Alarm Setting: Users can configure the advance notice period for food expiration alerts.
-
 - **SRS 04** - DS shall incorporate a "database" to systematically store user, food, and settings information. This database will employ a specific data structure, such as linked lists, for other efficient data organization.
-
-- **SRS 05** - DS shall be tasked with calculating expiration dates and persistently displaying reminder banners. To ensure .'s exhibition effect, the DS should verify expiration status at a minimum frequency of once per second and synchronize these reminders with SS upon request.
 
 - **SRS 06** - DS shall maintain a dynamic dictionary to encode each food item within the fridge. Each food type shall be assigned a unique identifier within this dictionary, which is then stored in the DS database.
 
@@ -96,10 +86,6 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
    \- The UI of SS should facilitate:
 
   - (a) The registration of new users and the de-registration of existing users.
-
-- **SRS 08** - SS should possess the capability to retrieve on-line recipes via an API, curate recommended recipes, and dispatch these to DS.
-
-- **SRS 09** - SS should ensure mobile device compatibility and accessibility.
 
 
 ## 4. Project Photos & Screenshots
