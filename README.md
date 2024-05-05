@@ -29,20 +29,26 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 ### 2.3 Device Functionality
 - Hardware: The device is centered around the SAMW25 microcontroller and integrates key hardware components including the ambient light sensor, a LCD, 3-channel touch sensor, and the QR Code reader.
-
 - Software: SS features a cloud-based UI, enabling users to remotely monitor their food inventory. In contrast, DS boasts a device-resident UI, which facilitates the addition and removal of food items from the system, thereby providing a local inventory checklist. These interfaces are tailored to empower users with seamless management of their fridge contents, whether they are adding new purchases or tracking existing items. Furthermore, the software architecture is crafted to accommodate multiple users, ensuring a collaborative and shared management experience. This is particularly beneficial for households or shared living spaces where fridge contents are communal.
-- Challenges
 
-- Prototype Learnings
+### 2.4 Challenges
 
-- Next Steps
+- It is kind of tricky to design the layout of PCB due to the appearance of prototype, components' position on board, especially on a relative compact board.
+- We did not consider much about the availability, for each pin on MCU, to be configured as specific function (such as I2C buses). So when we were working on the board, we found us unavailable to achieve the target without doing hardware modification (such as flying wire).
+- 
 
-- Takeaways from ESE5160
+### 2.5 Prototype Learnings
 
-- Project Links
-  - URL to your Node-RED
-  - A12G code repository
-  - final PCBA on Altium 365
+### 2.6 Next Steps
+
+### 2.7 Takeaways from ESE5160
+
+### 2.8 Project Links
+
+- URL to your Node-RED
+- A12G code repository
+- final PCBA on Altium 365
+
 ## 3. Hardware & Software Requirements
 
 ### 3.1 Hardware Requirements Specification (HRS)
