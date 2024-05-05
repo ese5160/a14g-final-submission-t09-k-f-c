@@ -13,16 +13,16 @@
 
 ### 2.1 Device Description
 
-The core vision of our FRIDGIT software is to "simplify and streamline fridge management." The primary functionality of this system revolves around tracking food quantities, logging purchase dates, and issuing expiration reminders.Our system's software is bifurcated into two main components: the Server Software (SS) and the Device Software (DS). Both are equipped with intuitive user interfaces (UIs) designed for ease of use.
+The core vision of our FRIDGIT software is to "simplify and streamline fridge management." The primary functionality of this system revolves around tracking food quantities, logging purchase dates, and issuing expiration reminders. Our system's software is bifurcated into two main components: the Server Software (SS) and the Device Software (DS). Both are equipped with intuitive user interfaces (UIs) designed for ease of use.
 
 This innovative solution employs a QR Code Reader to scan and record the quantity and expiration date of each food item, all of which are uniquely identified with QR codes. The information is then elegantly displayed on an LCD screen, offering users a clear and real-time overview of their remaining food inventory. To enhance user experience and energy efficiency, an Ambient Light Sensor intelligently controls the LCD screen's brightness. Additionally, a 3-Channel Touch Interface, featuring buttons and sliders, allows users to navigate menus and customize settings with ease.
-  
+
 Furthermore, when scanning a QR code, a buzzer will sound to indicate successful scanning. Additionally, when buttons are pressed or QR codes are scanned, a red LED will illuminate. During normal operation, a green LED will be lit, indicating that the device is functioning. In sleep mode, the green LED will be turned off to conserve energy.
 
 The FRIDGIT system is designed for individuals who find it challenging to keep an accurate mental inventory of their refrigerator's contents. This issue becomes particularly pronounced in households where the fridge is consistently well-stocked, leading to items being forgotten and, regrettably, spoiling. Such neglect not only results in wastage but also poses potential health risks and can negatively affect the quality of other items stored nearby.
 
 Additionally, our system's multi-user capability proves invaluable for those sharing living spaces, such as roommates. FRIDGIT adeptly manages the collective inventory, providing each user with a clear and organized view of their specific food items. This is achieved despite the shared physical storage, ensuring that each user can easily identify and track their groceries.
-  
+
 ### 2.2 Inspiration
 
 The idea of our project FRIDGIT born out of the necessity for organized living in shared spaces. In our communal living scenario, where the refrigerator tends to accumulate diverse food items over time, the system is designed to combat forgetfulness and prevent food wastage.
@@ -30,7 +30,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 ### 2.3 Device Functionality
 - Hardware: The device is centered around the SAMW25 microcontroller and integrates key hardware components including the ambient light sensor, a LCD, 3-channel touch sensor, and the QR Code reader.
 
-- Software: SS features a cloud-based UI, enabling users to remotely monitor their food inventory. In contrast, DS boasts a device-resident UI, which facilitates the addition and removal of food items from the system, thereby providing a local inventory checklist.These interfaces are tailored to empower users with seamless management of their fridge contents, whether they are adding new purchases or tracking existing items. Furthermore, the software architecture is crafted to accommodate multiple users, ensuring a collaborative and shared management experience. This is particularly beneficial for households or shared living spaces where fridge contents are communal.
+- Software: SS features a cloud-based UI, enabling users to remotely monitor their food inventory. In contrast, DS boasts a device-resident UI, which facilitates the addition and removal of food items from the system, thereby providing a local inventory checklist. These interfaces are tailored to empower users with seamless management of their fridge contents, whether they are adding new purchases or tracking existing items. Furthermore, the software architecture is crafted to accommodate multiple users, ensuring a collaborative and shared management experience. This is particularly beneficial for households or shared living spaces where fridge contents are communal.
 - Challenges
 
 - Prototype Learnings
@@ -111,5 +111,11 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 - The Altium Board design in 2D view
 - The Altium Board design in 3D view
 - Node-RED dashboard
+  ![Node-RED_dashboard](img\Node-RED_dashboard.png)
 - Node-RED backend
+  ![Node-RED_test](img\Node-RED_test.png)
+  ![Node-RED_MQTT](img\Node-RED_MQTT.png)
+- Web frontend (additional)
+  ![NiceGUI_User](img\NiceGUI_User.png)
+  ![NiceGUI_Stock](img\NiceGUI_Stock.png)
 - Block diagram
