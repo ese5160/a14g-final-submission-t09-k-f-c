@@ -41,8 +41,8 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 - Project Links
   - URL to your Node-RED
-  - A12G code repository
-  - final PCBA on Altium 365
+  - A12G code repository: https://github.com/ese5160/a12g-firmware-drivers-t09-k-f-c
+  - final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/folder-5853D6FB-9421-4C9F-A2A8-B61DBEEFAA1B
 ## 3. Hardware & Software Requirements
 
 ### 3.1 Hardware Requirements Specification (HRS)
