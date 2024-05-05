@@ -40,6 +40,9 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 - Takeaways from ESE5160
 
 - Project Links
+  - URL to your Node-RED
+  - A12G code repository
+  - final PCBA on Altium 365
 ## 3. Hardware & Software Requirements
 
 ### 3.1 Hardware Requirements Specification (HRS)
@@ -101,3 +104,12 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 
 ## 4. Project Photos & Screenshots
+- Final Project:
+- The standalone PCBA, top
+- The standalone PCBA, bottom
+- Thermal camera images
+- The Altium Board design in 2D view
+- The Altium Board design in 3D view
+- Node-RED dashboard
+- Node-RED backend
+- Block diagram
