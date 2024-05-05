@@ -32,20 +32,40 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 ### 2.4 Challenges
 
 - It is kind of tricky to design the layout of PCB due to the appearance of prototype, components' position on board, especially on a relative compact board.
-- We did not consider much about the availability, for each pin on MCU, to be configured as specific function (such as I2C buses). So when we were working on the board, we found us unavailable to achieve the target without doing hardware modification (such as flying wire).
-- 
+- We did not consider much about the availability when designing the schematics, for each pin on MCU, to be configured as specific function (such as I2C buses). So when we were working on the board, we found us unavailable to achieve the target without doing hardware modification (such as flying wire).
+- The development of I2C devices was a big challenge. We spent a lot of time studying and debugging the mechanism of different I2C devices. And we had one component (CAP1203 Touch Slider Module) that we cannot figure out the issue and we had to looking for other solutions.
+- Both of our Azure virtual machines was banned by Microsoft. We had to implement it on our local service at last.
+- The first version of our 3D-printed container box was short in depth, so it turned out that we cannot fit the battery into it. So we did the second version and made it in time.
+- Too many to be listed...
 
 ### 2.5 Prototype Learnings
 
+- Be sure leaving "redundant functions" in PCB layout (such as extra pins).
+- Add more testpoints to PCB, especially through-hole testpoints in the first design.
+- In a real demo, if you can use a simpler to realize a function, do not use the complexer one.
+- Get to the place in more advance at demo day to have more time to check the device.
+
 ### 2.6 Next Steps
+
+- Continuously debug the system, figure out the reason of fails and make it more robust.
+- Add more features, such as cuisine recommendation.
+- Reroute the PCB and fix the issues in the first version design.
+- ... more to be considered ...
 
 ### 2.7 Takeaways from ESE5160
 
-### 2.8 Project Links
+- The ability to design schematics depending on datasheet.
+- Drawing PCB layout using Altium Designer.
+- Using debugger and serial terminal on debugging.
+- Basic usage of FreeRTOS.
+- Learning to make migration on different projects.
+- Learning to use software frameworks; applying code by reading official documents and examples.
+- Lesson-learns:
+  - Read datasheet carefully before developing it!
+  - Utilize logic analyzer and be careful about connection of hardware.
+  - Ask others for help when trapped (especially the teacher).
 
-- URL to your Node-RED
-- A12G code repository
-- final PCBA on Altium 365
+### 2.8 Project Links
 
 - Project Links
   - URL to your Node-RED
