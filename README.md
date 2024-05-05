@@ -5,8 +5,7 @@
     * Team Name: K.F.C.
     * Team Members: Chen Chen, Kexin Shu
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t09-k-f-c
-    * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
-
+    * Description of test hardware: development boards, qr code reader, light sensor, LCD, laptop
 ## 1. Video Presentation
 
 ## 2. Project Summary
