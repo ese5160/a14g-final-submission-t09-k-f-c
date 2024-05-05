@@ -104,12 +104,12 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 
 ## 4. Project Photos & Screenshots
-- Final Project:
-- The standalone PCBA, top
-- The standalone PCBA, bottom
-- Thermal camera images
-- The Altium Board design in 2D view
-- The Altium Board design in 3D view
-- Node-RED dashboard
-- Node-RED backend
-- Block diagram
+- Final Project: ![alt text](<final project.jpg>)
+- The standalone PCBA, top:![alt text](PCBA-1.jpg) ![alt text](PCBA-2.jpg)
+- The standalone PCBA, bottom:![alt text](PCBA-3.jpg)
+- Thermal camera images:![alt text](thermal.jpg)
+- The Altium Board design in 2D view: ![alt text](2D.png)
+- The Altium Board design in 3D view:![alt text](3D.png)
+- Node-RED dashboard:
+- Node-RED backend:
+- Block diagram:![alt text](detailed_block.png)
