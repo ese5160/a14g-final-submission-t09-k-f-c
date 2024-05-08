@@ -129,11 +129,11 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 - The Altium Board design in 2D view: ![alt text](img/2D.png)
 - The Altium Board design in 3D view:![alt text](img/3D.png)
 - Node-RED dashboard
-  ![Node-RED_dashboard](img\Node-RED_dashboard.png)
+  ![Node-RED_dashboard](img/Node-RED_dashboard.png)
 - Node-RED backend
-  ![Node-RED_test](img\Node-RED_test.png)
-  ![Node-RED_MQTT](img\Node-RED_MQTT.png)
+  ![Node-RED_test](img/Node-RED_test.png)
+  ![Node-RED_MQTT](img/Node-RED_MQTT.png)
 - Web frontend (additional)
-  ![NiceGUI_User](img\NiceGUI_User.png)
-  ![NiceGUI_Stock](img\NiceGUI_Stock.png)
+  ![NiceGUI_User](img/NiceGUI_User.png)
+  ![NiceGUI_Stock](img/NiceGUI_Stock.png)
 - Block diagram:![alt text](img/detailed_block.png)
