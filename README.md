@@ -83,7 +83,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 - **HRS 03** - 1.8" diagonal LCD TFT display shall be used for user interface. LCD can display user and menu interface
 
-- **HRS 04** - Two different buttons shall be used to switch the menu and to comfirm the selected menu in LCD.
+- **HRS 04** - Two different buttons shall be used to switch the menu and to confirm the selected menu in LCD.
 
 - **HRS 05** - 5744 QR Code reader to I2C shall be used to scan and read QR codes on items in the refrigerator. Each item may be identified by a unique QR code, and the system can identify the item and update inventory information through a QR code reader. 
 
