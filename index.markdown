@@ -15,7 +15,7 @@ layout: home
     * Description of test hardware: development boards, qr code reader, light sensor, LCD, laptop
 ## 1. Video Presentation
 
-[Video](https://upenn.box.com/s/839xaw2z4wqqzta35od2lgikzkj434ug)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FC_td5RAi3Q?si=UgLtsfkp-B2EjYaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 2. Project Summary
 
