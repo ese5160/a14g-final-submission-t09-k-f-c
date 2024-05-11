@@ -1,4 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kzkUPShx)
+
+> ### The presentation page is now available on [FRIDGIT](https://ese5160.github.io/a14g-final-submission-t09-k-f-c/)
+
 # a14g-final-submission
 
     * Team Number: 09
@@ -8,7 +11,7 @@
     * Description of test hardware: development boards, qr code reader, light sensor, LCD, laptop
 ## 1. Video Presentation
 
-[Video](https://upenn.box.com/s/839xaw2z4wqqzta35od2lgikzkj434ug)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FC_td5RAi3Q?si=UgLtsfkp-B2EjYaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 2. Project Summary
 
