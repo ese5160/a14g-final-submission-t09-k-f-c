@@ -5,40 +5,33 @@
 layout: home
 ---
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kzkUPShx)
-# a14g-final-submission
+# FRIDGIT - a GIT of your FRIDGE
 
     * Team Number: 09
     * Team Name: K.F.C.
     * Team Members: Chen Chen, Kexin Shu
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t09-k-f-c
-    * Description of test hardware: development boards, qr code reader, light sensor, LCD, laptop
-## 1. Video Presentation
+
+## Project Demo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FC_td5RAi3Q?si=UgLtsfkp-B2EjYaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## 2. Project Summary
+## Project Overview
 
-### 2.1 Device Description
+The FRIDGIT software aims to simplify fridge management by tracking food quantities, logging purchase dates, and providing expiration reminders.  It consists of two main components: the Server Software (SS) and the Device Software (DS), each featuring intuitive user interfaces for easy operation.  The system uses a QR Code Reader to scan food items, each tagged with a QR code, displaying details like quantity and expiration on an LCD screen.  An Ambient Light Sensor adjusts the screen brightness for energy efficiency, while two buttons allow for easy navigation and settings adjustment.
 
-The core vision of our FRIDGIT software is to "simplify and streamline fridge management." The primary functionality of this system revolves around tracking food quantities, logging purchase dates, and issuing expiration reminders. Our system's software is bifurcated into two main components: the Server Software (SS) and the Device Software (DS). Both are equipped with intuitive user interfaces (UIs) designed for ease of use.
+Designed for those struggling to maintain a mental inventory of their fridge contents, FRIDGIT is particularly useful in well-stocked households where food spoilage is common.  The system also supports multi-user environments, making it ideal for roommates to manage and track their groceries collectively, ensuring easy identification and minimal waste.
 
-This innovative solution employs a QR Code Reader to scan and record the quantity and expiration date of each food item, all of which are uniquely identified with QR codes. The information is then elegantly displayed on an LCD screen, offering users a clear and real-time overview of their remaining food inventory. To enhance user experience and energy efficiency, an Ambient Light Sensor intelligently controls the LCD screen's brightness. Additionally, we designed 2 buttons which allows users to navigate menus and customize settings with ease.
-
-The FRIDGIT system is designed for individuals who find it challenging to keep an accurate mental inventory of their refrigerator's contents. This issue becomes particularly pronounced in households where the fridge is consistently well-stocked, leading to items being forgotten and, regrettably, spoiling. Such neglect not only results in wastage but also poses potential health risks and can negatively affect the quality of other items stored nearby.
-
-Additionally, our system's multi-user capability proves invaluable for those sharing living spaces, such as roommates. FRIDGIT adeptly manages the collective inventory, providing each user with a clear and organized view of their specific food items. This is achieved despite the shared physical storage, ensuring that each user can easily identify and track their groceries.
-
-### 2.2 Inspiration
+## Inspiration
 
 The idea of our project FRIDGIT born out of the necessity for organized living in shared spaces. In our communal living scenario, where the refrigerator tends to accumulate diverse food items over time, the system is designed to combat forgetfulness and prevent food wastage.
 
-### 2.3 Device Functionality
+## Device Functionality
 - Hardware: The device is centered around the SAMW25 microcontroller and integrates key hardware components including the ambient light sensor, and the QR Code reader and LCD.
 
 - Software: SS features a cloud-based UI, enabling users to remotely monitor their food inventory. In contrast, DS boasts a device-resident UI, which facilitates the addition and removal of food items from the system, thereby providing a local inventory checklist. These interfaces are tailored to empower users with seamless management of their fridge contents, whether they are adding new purchases or tracking existing items. Furthermore, the software architecture is crafted to accommodate multiple users, ensuring a collaborative and shared management experience. This is particularly beneficial for households or shared living spaces where fridge contents are communal.
 
-### 2.4 Challenges
+## Challenges
 
 - It is kind of tricky to design the layout of PCB due to the appearance of prototype, components' position on board, especially on a relative compact board.
 - We did not consider much about the availability when designing the schematics, for each pin on MCU, to be configured as specific function (such as I2C buses). So when we were working on the board, we found us unavailable to achieve the target without doing hardware modification (such as flying wire).
@@ -47,21 +40,21 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 - The first version of our 3D-printed container box was short in depth, so it turned out that we cannot fit the battery into it. So we did the second version and made it in time.
 - Too many to be listed...
 
-### 2.5 Prototype Learnings
+## Prototype Learnings
 
 - Be sure leaving "redundant functions" in PCB layout (such as extra pins).
 - Add more testpoints to PCB, especially through-hole testpoints in the first design.
 - In a real demo, if you can use a simpler to realize a function, do not use the complexer one.
 - Get to the place in more advance at demo day to have more time to check the device.
 
-### 2.6 Next Steps
+## Next Steps
 
 - Continuously debug the system, figure out the reason of fails and make it more robust.
 - Add more features, such as cuisine recommendation.
 - Reroute the PCB and fix the issues in the first version design.
 - ... more to be considered ...
 
-### 2.7 Takeaways from ESE5160
+## Takeaways from ESE5160
 
 - The ability to design schematics depending on datasheet.
 - Drawing PCB layout using Altium Designer.
@@ -74,15 +67,14 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
   - Utilize logic analyzer and be careful about connection of hardware.
   - Ask others for help when trapped (especially the teacher).
 
-### 2.8 Project Links
+## Related Links
 
-- Project Links
-  - URL to your Node-RED: We are running node-red on local service due to the forbidden in our Azure VM. The source code of node-red and additional python web service, please see [A12G/web/](https://github.com/ese5160/a12g-firmware-drivers-t09-k-f-c/tree/main/web)
-  - A12G code repository: https://github.com/ese5160/a12g-firmware-drivers-t09-k-f-c
-  - final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/folder-5853D6FB-9421-4C9F-A2A8-B61DBEEFAA1B
-## 3. Hardware & Software Requirements
+- URL to your Node-RED: We are running node-red on local service due to the forbidden in our Azure VM. The source code of node-red and additional python web service, please see [A12G/web/](https://github.com/ese5160/a12g-firmware-drivers-t09-k-f-c/tree/main/web)
+- A12G code repository: https://github.com/ese5160/a12g-firmware-drivers-t09-k-f-c
+- final PCBA on Altium 365: https://upenn-eselabs.365.altium.com/designs/folder-5853D6FB-9421-4C9F-A2A8-B61DBEEFAA1B
+## Hardware & Software Requirements
 
-### 3.1 Hardware Requirements Specification (HRS)
+### Hardware Requirements Specification (HRS)
 
 - **HRS 01** - Project shall be based on SAMW25 microcontroller
 
@@ -96,7 +88,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
 
 - **HRS 06** - Buzzer shall beep when QR code reader scans to make inventory-in and inventory-out.
 
-### 3.2 Software Requirements Specification (SRS)
+### Software Requirements Specification (SRS)
 
 - **SRS 01** - The Server Software (SS) and Device Software (DS) shall establish connectivity via Wi-Fi, enabling seamless data transmission and reception between them.
 
@@ -128,7 +120,7 @@ The idea of our project FRIDGIT born out of the necessity for organized living i
   - (a) The registration of new users and the de-registration of existing users.
 
 
-## 4. Project Photos & Screenshots
+## Project Photos & Screenshots
 - Final Project: ![alt text](<img/final project.jpg>)
 - The standalone PCBA, top:![alt text](img/PCBA-1.jpg) ![alt text](img/PCBA-2.jpg)
 - The standalone PCBA, bottom:![alt text](img/PCBA-3.jpg)
