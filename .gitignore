@@ -30,4 +30,11 @@ secret.h
 
 # no source files allowed in final repo
 *.c
-*.h 
+*.h
+
+# jekyll
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
