@@ -8,7 +8,7 @@
     * Description of test hardware: development boards, qr code reader, light sensor, LCD, laptop
 ## 1. Video Presentation
 
-[Video](https://github.com/ese5160/example-repository-submission)
+[Video](https://upenn.box.com/s/839xaw2z4wqqzta35od2lgikzkj434ug)
 
 ## 2. Project Summary
 
