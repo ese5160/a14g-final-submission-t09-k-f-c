@@ -9,7 +9,7 @@ layout: home
 
     * Team Number: 09
     * Team Name: K.F.C.
-    * Team Members: Chen Chen, Kexin Shu
+    * Team Members: Chen Chen(cccc@seas.upenn.edu), Kexin Shu(kexins@seas.upenn.edu)
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t09-k-f-c
 
 ## Project Demo

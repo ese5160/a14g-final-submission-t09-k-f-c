@@ -38,3 +38,5 @@ gem 'webrick', '~> 1.7'
 gem 'csv', '~> 3.1.9'  # depend on need
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?  # only needed on windows
 gem 'faraday-retry'  # if using Faraday v2.0+
+
+# gem 'jekyll-toc'
